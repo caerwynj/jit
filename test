@@ -1,6 +1,13 @@
 #!/bin/sh
+EMU="/home/caerwynj/9ferno/emu/Linux/o.emu -c1 -d"
 for i in *.dis
 do
 	echo $i
 	~/9ferno/emu/Linux/o.emu -s -c1 -d /dis/$i
 done
+
+echo COMMANDs
+$EMU /dis/echo.dis test1
+$EMU /dis/pwd.dis
+$EMU /dis/ps.dis
+$EMU /dis/whoami.dis

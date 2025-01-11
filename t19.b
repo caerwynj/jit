@@ -80,6 +80,7 @@ arg(): string
 # return 0 at end of options
 opt(): int
 {
+	sys->print("opt0\n");
 	if (curropt != nil) {
 		sys->print("opt1 %c\n", curropt[0]);
 		opt := curropt[0];
@@ -91,8 +92,10 @@ opt(): int
 		return 0;
 
 	nextarg := hd args;
+	sys->print("opt1.1 %s %d\n", nextarg, len nextarg);
 	if (len nextarg < 2 || nextarg[0] != '-')
 		return 0;
+	sys->print("opt1.2\n");
 
 	if (nextarg == "--") {
 		args = tl args;

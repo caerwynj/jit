@@ -33,9 +33,12 @@ init()
 			}
 		args = arg->argv();
 	}
+	args = tl args;
 	sys->print("here3 %s\n", hd args);
+	if (args == nil)
+		args = "/dis/t3.dis" :: nil;
 	mod: Command;
-	(mod, args) = loadmod("/dis/t3.dis" :: nil);
+	(mod, args) = loadmod(args);
 
 	mod->init(nil, args);
 }

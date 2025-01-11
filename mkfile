@@ -8,3 +8,6 @@ all:V: $DIS
 
 install:V: $DIS
 	cp *.dis ~/9ferno/dis
+
+nuke:V:
+	rm -f *.dis *.sbl
