@@ -33,8 +33,9 @@ init()
 			}
 		args = arg->argv();
 	}
-	args = tl args;
-	sys->print("here3 %s\n", hd args);
+	#args = tl args;
+	for(l:= args; l!=nil;l=tl l)
+		sys->print("here3 %s\n", hd l);
 	if (args == nil)
 		args = "/dis/t3.dis" :: nil;
 	mod: Command;
@@ -52,7 +53,7 @@ loadmod(args: list of string): (Command, list of string)
 	else
 		args = "sh" :: "-l" :: nil;	# add startup option
 
-	sys->print("here %s\n", path);
+	sys->print("here loadmod %s\n", path);
 	# try loading the module directly.
 	mod: Command;
 	if (path != nil && path[0] == '/')
@@ -62,6 +63,7 @@ loadmod(args: list of string): (Command, list of string)
 		if (mod == nil)
 			mod = load Command "/"+path;
 	}
+	sys->print("mod loaded %d\n", mod != nil);
 	if(mod != nil)
 		return (mod, args);
 
