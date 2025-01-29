@@ -1,4 +1,5 @@
 alias e="~/9ferno/emu/Linux/o.emu -s -c5 -d"
 alias e1="~/9ferno/emu/Linux/o.emu -s -c1 -d"
 alias ee="~/9ferno/emu/Linux/o.emu -s -c1"
-alias disdump="mash disdump "
+alias e0="~/9ferno/emu/Linux/o.emu -s -c0"
+alias dis="mash disdump "
