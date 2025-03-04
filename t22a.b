@@ -3,13 +3,13 @@ include "sys.m";
 include "draw.m";
 sys:Sys;
 Command:module{init:fn(ctx:ref Draw->Context, argv:list of string);};
-St:adt {
-	a, b: int;
-};
-a := array[] of {St(1,2), St(2,3)};
+
 init(nil: ref Draw->Context, nil: list of string)
 {
-	x := 2 * a[1].b;
-	sys = load Sys "$Sys";
-	sys->print("%d\n", x);
+	sys = load Sys Sys->PATH;
+	s := ".";
+	s[len s] = 'a';
+	s[len s] = 'b';
+	s[len s] = 'c';
+	sys->print("%d %d %s\n", len s, 1, s);
 }

@@ -1,3 +1,6 @@
 *.dis
 *.sbl
+*.s
+out
+out.save
 

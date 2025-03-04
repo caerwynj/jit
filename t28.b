@@ -10,7 +10,9 @@ init(nil: ref Draw->Context, nil: list of string)
 	sys = load Sys Sys->PATH;
 	i: int;
 	i = 1<<31;
-	print("%d\n", i);
+	print("%d, %ux\n", i, i);
 	i +=1;
-	print("%d\n", i);
+	print("%d, %ux\n", i, i);
+	i -= 2;
+	print("%d, %ux\n", i, i);
 }

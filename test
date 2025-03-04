@@ -1,13 +1,22 @@
 #!/bin/sh
-EMU="/home/caerwynj/9ferno/emu/Linux/o.emu -c1 -d"
+
+case $# in
+1) compile="$*"  ;;
+0) compile="-c1" ;;
+esac
+
+EMU="/home/caerwynj/9ferno/emu/Linux/o.emu -s $compile -d"
+echo $EMU
 for i in t*.dis
 do
 	echo $i
-	~/9ferno/emu/Linux/o.emu -s -c1 -d /dis/$i
+	$EMU /dis/$i
 done
 
 echo COMMANDs
-$EMU /dis/echo.dis test1
-$EMU /dis/pwd.dis
-$EMU /dis/ps.dis
-$EMU /dis/whoami.dis
+#$EMU /dis/echo.dis test1
+for i in pwd ps whoami
+do
+	echo $i
+	$EMU /dis/$i.dis
+done
