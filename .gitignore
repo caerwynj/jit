@@ -3,4 +3,4 @@
 *.s
 out
 out.save
-
+*.jit

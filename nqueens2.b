@@ -10,7 +10,7 @@ Command:module{
 init(nil:ref Draw->Context, argv:list of string)
 {
 	sys = load Sys Sys->PATH;
-	argv = tl argv;
+	if(argv != nil) argv = tl argv;
 	if(argv != nil) n = int hd argv;
 	nqueens();
 	print("%d solutions\n", solutions);

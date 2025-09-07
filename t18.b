@@ -37,7 +37,7 @@ init()
 	for(l:= args; l!=nil;l=tl l)
 		sys->print("here3 %s\n", hd l);
 	if (args == nil)
-		args = "/dis/t3.dis" :: nil;
+		args = "/dis/t03.dis" :: nil;
 	mod: Command;
 	(mod, args) = loadmod(args);
 

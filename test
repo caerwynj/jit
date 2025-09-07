@@ -5,7 +5,7 @@ case $# in
 0) compile="-c1" ;;
 esac
 
-EMU="/home/caerwynj/9ferno/emu/Linux/o.emu -s $compile -d"
+EMU="/home/caerwynj/inferno64/emu/Linux/o.emu -s $compile -d"
 echo $EMU
 for i in t*.dis
 do

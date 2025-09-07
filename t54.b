@@ -12,7 +12,6 @@ init(nil:ref Draw->Context, nil:list of string)
 	} exception e {
 	* => 
 		sys->print("exception\n");
-		exit;
+		return;
 	}
 }
-

@@ -20,6 +20,8 @@ init(nil: ref Draw->Context, nil: list of string)
 		print("i>=1");
 	if(i<=0)
 		print("i<=0");
+	if(i<=-1)
+		print("i<=-1");
 	if(i==0)
 		print("i==0");
 	if(i>=0)
