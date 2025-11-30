@@ -22,3 +22,10 @@ install:V: $DIS
 
 nuke:V:
 	rm -f *.dis *.sbl
+
+
+coverage:V: $ASM
+	awk '!/^#/ {print $1}' *.s |sort |uniq >inst
+	cat isa.md |tr ' ' '\n' |sort |uniq |awk '!/0x/' > isa
+	comm -23 isa inst > uncovered
+	echo "scale=2; 1 - ( $(wc -l <uncovered) / $(wc -l <isa)  )"  |bc
