@@ -29,3 +29,6 @@ coverage:V: $ASM
 	cat isa.md |tr ' ' '\n' |sort |uniq |awk '!/0x/' > isa
 	comm -23 isa inst > uncovered
 	echo "scale=2; 1 - ( $(wc -l <uncovered) / $(wc -l <isa)  )"  |bc
+
+isa-report: $ASM
+	./unique-dis-instr.sh t*.s > isa-report

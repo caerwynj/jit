@@ -1,0 +1,259 @@
+t01.s:
+  addw
+  blew
+  jmp
+  movw
+  ret
+t02.s:
+  (none)
+t03.s:
+  ext
+  frame
+  lea
+  load
+  mcall
+  movp
+t04.s:
+  consl
+  lenl
+  long
+t05.s:
+  lenc
+t06.s:
+  cvtbw
+  cvtcw
+  cvtfw
+  cvtlw
+  cvtwb
+  cvtwc
+  cvtwf
+  cvtwl
+t07.s:
+  lena
+  newa
+t08.s:
+  indl
+t09.s:
+  indc
+t10.s:
+  call
+t11.s:
+  consw
+  headw
+  tail
+t12.s:
+  case
+t13.s:
+  (none)
+t14.s:
+  slicec
+t15.s:
+  insc
+t16.s:
+  beqw
+  slicea
+  subw
+t17.s:
+  addc
+  bgew
+  bgtw
+  bltw
+  bnew
+  consp
+  cvtac
+  mframe
+t18.s:
+  beqc
+  headp
+  raise
+t19.s:
+  bnec
+t20.s:
+  (none)
+t21.s:
+  movmp
+t22a.s:
+  (none)
+t22.s:
+  (none)
+t23.s:
+  bneb
+  byte
+  indb
+t24.s:
+  (none)
+t25.s:
+  (none)
+t26.s:
+  (none)
+t27.s:
+  (none)
+t28.s:
+  (none)
+t29.s:
+  (none)
+t30.s:
+  addb
+  addl
+  movb
+  movl
+t31.s:
+  shlb
+  shlw
+  shrb
+  shrw
+t32.s:
+  (none)
+t33.s:
+  (none)
+t34.s:
+  (none)
+t35.s:
+  (none)
+t36.s:
+  goto
+t37.s:
+  (none)
+t38.s:
+  mulw
+t39.s:
+  (none)
+t40.s:
+  (none)
+t41.s:
+  (none)
+t42.s:
+  (none)
+t43.s:
+  (none)
+t44.s:
+  shll
+  shrl
+t45.s:
+  apop
+  array
+  indir
+  indx
+t46.s:
+  (none)
+t47.s:
+  (none)
+t48.s:
+  (none)
+t49.s:
+  (none)
+t50.s:
+  alt
+  exit
+  newcw
+  send
+  spawn
+t51.s:
+  (none)
+t52.s:
+  exception
+  exceptions
+  exctab
+t55.s:
+  (none)
+t56.s:
+  (none)
+t57.s:
+  (none)
+t58.s:
+  (none)
+t59.s:
+  cvtca
+t60.s:
+  (none)
+t61.s:
+  addf
+  blef
+  divf
+  movf
+  mulf
+  negf
+  real
+  subf
+t62.s:
+  cvtfl
+  cvtlf
+t63.s:
+  divl
+  mull
+  subl
+t64.s:
+  casec
+t65.s:
+  (none)
+t66.s:
+  (none)
+t67.s:
+  casel
+t68.s:
+  andb
+  bgeb
+  bgtb
+  bleb
+  bltb
+  divb
+  modb
+  mulb
+  orb
+  subb
+  xorb
+t69.s:
+  andw
+  divw
+  modw
+  orw
+  xorw
+t70.s:
+  bgec
+  bgtc
+  blec
+  bltc
+t71.s:
+  beqf
+  bgef
+  bgtf
+  bltf
+  bnef
+  cvtfc
+t72.s:
+  beql
+  bgel
+  bgtl
+  blel
+  bltl
+  bnel
+  cvtlc
+  modl
+t73.s:
+  consb
+  consf
+  headb
+  headf
+  headl
+t74.s:
+  consm
+  consmp
+  headm
+  headmp
+t75.s:
+  indf
+  slicela
+t76.s:
+  mspawn
+  nbalt
+  newcb
+  newcf
+  newcl
+  newcm
+  newcmp
+  newcp
+  recv
+t77.s:
+  movm
+t78.s:
+  new
