@@ -1,0 +1,36 @@
+#!/bin/sh
+
+# Wrapper script to run emu with a timeout to handle hangs
+# Usage: run-emu [timeout_seconds] [emu_args...]
+# Default timeout: 5 seconds
+
+TIMEOUT_SECS=5
+
+# Check if first arg is a number (custom timeout)
+case "$1" in
+    [0-9]*)
+        TIMEOUT_SECS="$1"
+        shift
+        ;;
+esac
+
+if [ $# -eq 0 ]; then
+    echo "Usage: run-emu [timeout_seconds] [emu_args...]"
+    echo "Example: run-emu 5 -c5 -d /dis/t01.dis"
+    echo "         run-emu -c5 -d /dis/t01.dis  (uses default 5s timeout)"
+    exit 1
+fi
+
+EMU="${ROOT:-/home/caerwyn/inferno64}/emu/Linux/o.emu"
+
+timeout "$TIMEOUT_SECS" "$EMU" "$@"
+status=$?
+
+if [ $status -eq 124 ]; then
+    echo "TIMEOUT: emu hung after ${TIMEOUT_SECS}s" >&2
+    exit 124
+elif [ $status -ne 0 ]; then
+    exit $status
+fi
+
+exit 0

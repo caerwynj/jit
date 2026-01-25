@@ -6,7 +6,7 @@ JIT=${SRC:%.b=%.jit}
 all:V: $DIS $ASM t53.h $JIT
 
 %.jit: %.dis
-	emu -c5 -d /dis/$stem.dis > $target
+	./run-emu -c5 -d /dis/$stem.dis > $target
 
 %.dis: %.b
 	limbo $stem.b
