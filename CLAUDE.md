@@ -10,7 +10,7 @@ JIT compiler source: `/home/caerwyn/inferno64/libinterp/comp-arm64.c`
 
 ## Environment Setup
 
-Set `$ROOT` to the Inferno OS installation:
+`$ROOT` is set to the Inferno OS installation:
 ```bash
 export ROOT=/home/caerwyn/inferno64
 ```
@@ -31,7 +31,7 @@ mk nuke         # Clean generated files
 
 ```bash
 # Run single test with JIT debug output
-emu -c5 -d /dis/t01.dis
+./run-emu -c5 -d /dis/t01.dis
 
 # Run all tests
 ./test -c5    # or ./test -c1 for single-level compilation

@@ -15,7 +15,7 @@ done
 
 echo COMMANDs
 #$EMU /dis/echo.dis test1
-for i in pwd ps whoami
+for i in pwd ps whoami nqueens2
 do
 	echo $i
 	$EMU /dis/$i.dis

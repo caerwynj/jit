@@ -1,0 +1,218 @@
+./run-emu -s -c1 -d
+t01.dis
+t02.dis
+t03.dis
+hello, world
+t04.dis
+t05.dis
+t06.dis
+t07.dis
+t08.dis
+t09.dis
+t10.dis
+t11.dis
+t12.dis
+t13.dis
+t14.dis
+h o el
+t15.dis
+b o el
+t16.dis
+1 len 3
+t17.dis
+here1
+here2
+here5 50 62 len 62
+here2
+here5 47 49 len 62
+here2
+here5 43 46 len 62
+here2
+here5 40 42 len 62
+here2
+here5 0 39 len 62
+t18.dis
+here
+here2 /home/caerwyn/inferno64/emu/Linux/o.emu
+here2.1
+opt0
+opt1.1 -s 2
+opt1.2
+opt2 -s
+opt3 
+Segmentation fault
+t19.dis
+t20.dis
+t21.dis
+1 2 2 3 2
+end
+t22.dis
+4 .abc
+t22a.dis
+4 1 .abc
+t23.dis
+here
+here2 / 1
+here2.5
+here3
+here4
+bind / /
+here2 #U 2
+here2.5
+here3
+here4
+bind -ac '#U' /
+here2 /dev 4
+here2.5
+here3
+here4
+bind /dev /dev
+here2 #^ 2
+here2.5
+here3
+here4
+bind -b '#^' /dev
+here2 /chan 5
+here2.5
+here3
+here4
+bind /chan /chan
+here2 #^ 2
+here2.5
+here3
+here4
+bind -b '#^' /chan
+here2 #m 2
+here2.5
+here3
+here4
+bind -b '#m' /dev
+here2 #c 2
+here2.5
+here3
+here4
+bind -b '#c' /dev
+here2 #p 2
+here2.5
+here3
+here4
+bind '#p' /prog
+here2 #d 2
+here2.5
+here3
+here4
+bind '#d' /fd
+here2 /net 4
+here2.5
+here3
+here4
+bind /net /net
+here2 #I 2
+here2.5
+here3
+here4
+bind -a '#I' /net
+cd /
+t24.dis
+1 /
+t25.dis
+i<=0i==0i>=0i<1i>-1-1<0len s<3len s<=3
+end
+t26.dis
+
+end
+t27.dis
+len s<3len s<=3
+end
+t28.dis
+-2147483648, 80000000
+-2147483647, 80000001
+2147483647, 7fffffff
+t29.dis
+1 2
+t30.dis
+t31.dis
+t32.dis
+t33.dis
+t34.dis
+a
+b
+c
+t35.dis
+t36.dis
+default
+t37.dis
+returns 0
+t38.dis
+done case 9
+t39.dis
+end
+t40.dis
+ifmmp!xpsme
+t41.dis
+t42.dis
+t43.dis
+t44.dis
+t45.dis
+6
+t46.dis
+16
+t47.dis
+10
+t48.dis
+4
+t49.dis
+t50.dis
+1
+Segmentation fault
+t51.dis
+-1
+t52.dis
+[Command] Broken: pid 3036465 "error"
+TIMEOUT: emu hung after 5s
+t55.dis
+t56.dis
+t57.dis
+hello c     5      hello    hello     5 hello hello
+t58.dis
+i<=n 0
+endt59.dis
+read 5
+t60.dis
+t61.dis
+less than 1.0
+-6 .9
+t62.dis
+6 6 2 2
+t63.dis
+7 6 
+t64.dis
+t65.dis
+t66.dis
+t67.dis
+Segmentation fault
+t68.dis
+t69.dis
+t70.dis
+t71.dis
+t72.dis
+t73.dis
+panic: disinit error: Success
+Aborted
+t74.dis
+t75.dis
+t76.dis
+t77.dis
+t78.dis
+t79.dis
+loaded bufio OK
+COMMANDs
+pwd
+/
+ps
+       1        1    caerwyn    0:00.0      ready     5K Ps
+whoami
+caerwyn
+nqueens2
+10 solutions
+profile (1, 5, 12, 14, 12, 10)
